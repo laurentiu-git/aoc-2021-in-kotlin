@@ -5,7 +5,7 @@ fun main() {
     part2(input)
 }
 
-fun part1(input: List<String>): Int {
+private fun part1(input: List<String>): Int {
     var result = 0
     input.forEachIndexed { index, string ->
         if (index < input.size - 1) {
@@ -18,7 +18,7 @@ fun part1(input: List<String>): Int {
     return result
 }
 
-fun part2(input: List<String>): Int {
+private fun part2(input: List<String>): Int {
     var result = 0
     var sum: Int
     input.forEachIndexed { index, string ->
@@ -33,7 +33,7 @@ fun part2(input: List<String>): Int {
     return result
 }
 
-fun sumOfThreeNumbersFromIndex(index: Int, input: List<String>) : Int {
+private fun sumOfThreeNumbersFromIndex(index: Int, input: List<String>) : Int {
     var sum = 0
     input.subList(index, index+3).forEach { number->
         sum += number.toInt()
