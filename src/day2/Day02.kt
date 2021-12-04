@@ -1,3 +1,8 @@
+package day2
+
+import Day02
+import readInput
+
 fun main() {
     val input = readInput("Day02")
     val input2 = readInput("Day02")
